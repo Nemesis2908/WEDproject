@@ -4,24 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazing Groceries</title>
+    <style>
+        body {
+            background-image: url('images/agbackground.jpg'); 
+            background-size: cover; /* Ensures the image covers the whole background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Keeps the background fixed during scroll */
+        }
+        h1 {
+            font-size: 75px;
+            text-align: center;
+        }
+        p {
+            font-size: 50px;
+            text-align: center;
+        }
+        img.content-image {
+            display: block;
+            margin: 0 auto;
+            width: 500px;
+        }
+        .shop-now-btn {
+            margin: 40px auto; /* Adds space above and centers the button */
+            display: block; /* Center the button horizontally */
+            padding: 10px 20px;
+            font-size: 20px;
+            width: auto;
+            max-width: 150px;
+            font-weight: bold;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .shop-now-btn:hover {
+            background-color: #3696d6; /* A different colour on hover */
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Amazing Groceries!</h1> //introduvtion
+    <h1>Welcome to Amazing Groceries!</h1> 
     <p>Your one-stop shop for all your grocery needs.</p>
-    <img>
-    <h2>Shop Now</h2>
-    <a href="product.html">
-        <button>Shop Now</button>   
-    </a>
-    <a href="about.html">
-        <button>About Us</button>
-    </a>
-    <a href="enquiry.html">
-        <button>Enquirys</button>
-    </a>
-    <a href="contact.html">
-        <button>Contact Us</button>
-    </a>
-    
+    <p>We offer a wide variety of fresh produce, dairy products, meats, and pantry staples to keep your kitchen stocked and your family happy.</p>
+    <a href="products.html" class="shop-now-btn">SHOP NOW!</a>
+    <a href="about.html" class="shop-now-btn">ABOUT US</a>
+    <a href="contact.html" class="shop-now-btn">CONTACT US</a>
+    <a href="enquiry.html" class="shop-now-btn">ENQUIRY</a>
 </body>
 </html>
