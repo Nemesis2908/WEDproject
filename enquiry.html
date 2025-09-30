@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Amazing Groceries</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-image: url('images/web background.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-attachment: fixed; 
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 75px;
+            text-align: center;
+        }
+        .form-container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .form-container input[type=text],
+        .form-container input[type=text],
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; 
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        .form-container textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 14px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .nav-btn {
+            margin: 40px auto; 
+            display: block; 
+            padding: 10px 20px;
+            font-size: 20px;
+            width: auto;
+            max-width: 150px;
+            font-weight: bold;
+            color: rgb(252, 249, 249);
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+        .nav-btn:hover {
+            background-color: #3696d6; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Make an Enquiry</h1>
+    <div class="form-container">
+        <form action="#"> 
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject of your enquiry.." required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here.." required></textarea>
+
+            <button type="submit" class="submit-btn">Submit Enquiry</button>
+        </form>
+    </div>
+    <a href="index.html" class="nav-btn">HOME</a>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/web background.jpg'); 
+    background-size: cover; /* Ensures the image covers the whole background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+}
+
+h1 {
+    font-size: 75px;
+    text-align: center;
+}
+
+/* A larger heading for sub-pages */
+.page-title {
+    font-size: 90px;
+}
+
+p {
+    font-size: 50px;
+    text-align: center;
+}
+
+.page-content {
+    font-size: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+img.content-image {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+
+/* A general button style for all navigation/action buttons */
+.btn {
+    margin: 40px auto; /* Adds space above and centers the button */
+    display: block; /* Center the button horizontally */
+    padding: 10px 20px;
+    font-size: 20px;
+    width: auto;
+    max-width: 150px;
+    text-decoration: none; /* Remove underline from links styled as buttons */
+    font-weight: bold;
+    color: rgb(252, 249, 249);
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #3696d6; /* A different colour on hover */
+}
