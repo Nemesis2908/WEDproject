@@ -34,7 +34,7 @@ img.content-image {
     width: 500px;
 }
 
-/* A general button style for all navigation/action buttons */
+/* A general button style */
 .btn {
     margin: 40px auto; /* Adds space above and centers the button */
     display: block; /* Center the button horizontally */
@@ -55,4 +55,56 @@ img.content-image {
 
 .btn:hover {
     background-color: #3696d6; /* A different colour on hover */
+}
+
+/* === Product Page Styles === */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.product-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.product-card .product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+.product-card .add-to-cart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.product-card .add-to-cart-btn:hover {
+    background-color: #45a049;
 }
