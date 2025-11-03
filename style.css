@@ -57,6 +57,14 @@ img.content-image {
     background-color: #3696d6; /* A different colour on hover */
 }
 
+/* Container for index page buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Adds space between the buttons */
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
 /* === Product Page Styles === */
 .product-grid {
     display: grid;
